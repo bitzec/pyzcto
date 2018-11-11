@@ -14,7 +14,7 @@ from decimal import Decimal
 
 defaults = {
     'zcashd_host': '127.0.0.1',
-    'zcashd_port': '8232'
+    'zcashd_port': '8732'
     }
 
 class mainwindow(QMainWindow):
@@ -23,13 +23,13 @@ class mainwindow(QMainWindow):
         loadUi("pyzcto.ui", self)
         self.settings = {}
         self.load_settings()
-        fd = open(os.path.expanduser('~/.zcash/zcash.conf'))
+        fd = open(os.path.expanduser('~/.bitzec/bitzec.conf'))
         fdl = fd.readlines()
         fd.close()
         userlines = [l for l in fdl if 'rpcuser' in l]
         passlines = [l for l in fdl if 'rpcpassword' in l]
         if not userlines or not passlines:
-            raise Error('setup rpcuser and rpcpassword in zcash.conf')
+            raise Error('setup rpcuser and rpcpassword in bitzec.conf')
         username = userlines[-1].replace(' ', '').split('=', 1)[1]
         password = passlines[-1].replace(' ', '').split('=', 1)[1]
         self.line_user.setText(username.replace('\n',''))

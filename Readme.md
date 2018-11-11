@@ -19,7 +19,7 @@ In order to use this program, you need to have the following:
 
 Just open a terminal, cd to the pyzcto directory, and run `python pyzcto.py`.
 
-It should open a window, and show in the bottom bar the message "connected to 127.0.0.1:8232" If it doesn't, go to the "Zcash" pannel and set up the configuration properly.
+It should open a window, and show in the bottom bar the message "connected to 127.0.0.1:8732" If it doesn't, go to the "Zcash" pannel and set up the configuration properly.
 
 ### The "Addresses" tab
 
