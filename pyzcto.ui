@@ -1379,7 +1379,7 @@
       </widget>
       <widget class="QWidget" name="tab_zcash">
        <attribute name="title">
-        <string>Zcash</string>
+        <string>Bitzec</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_2">
         <item row="0" column="1">
